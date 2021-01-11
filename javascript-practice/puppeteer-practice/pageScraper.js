@@ -63,6 +63,6 @@ const scraperObject = {
       };
       console.log(rate);
   }
-}
+
 
 module.exports = scraperObject;
