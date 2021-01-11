@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .js{
+            font-weight: bold;
+            color : red;
+        }
+        #first{
+            color:green;
+        }
+        span{
+            color:blue;
+        }
+    </style>
+</head>
+<body>
+    <h1><a href = "index.html">WEB</a></h1>
+    <h2 style = "background-color : coral ; color:powderblue">JavaScript</h2>
+    <p>
+        <span id = "first" class = "js">JavaScript</span> (/ˈdʒɑːvəˌskrɪpt/),[6] often abbreviated as JS, 
+        is a programming <span>language</span> that conforms to the ECMAScript specification.[7] 
+        <span class = "js">JavaScript</span> is high-level, often just-in-time compiled, and multi-paradigm. It has curly-bracket syntax, dynamic typing, prototype-based object-orientation, and first-class functions.
+    </p>
+</body>
+</html>
+<!-- color 부분은 css 언어다. 만약 검색해보고 싶다면 CSS property + 원하는 디자인 요소로 검색함
+     CSS property background color로 검색하면 방금 배운 background-color 속성에 대해 알아볼 수 있음.-->
+
+<!-- div 태그는 어떠한 의미도 기능도 없다. 따라서 css나 자바를 통해서 그것을 제어하고자 할 때 그것을 감싸주는 무색 무취의 태그-->
+
+<!-- div 태그는 줄바꿈이 되는 태그라 무색 무취의 태그가 필요한데 이게 바로 span 태그-->
+
+<!-- style 태그는 그 안에 있는 것이 css를 의미한다는 일을 의미하는 tag이다. -->
+
+<!-- 여기서 가장 신기한 것은 class를 저장하고 앞에서 class를 .js로 설정하자-->
+
+<!-- class는 .을 붙이고 id는 #을 붙여야 한다.-->
+
+<!-- 선택자 : class, id / class는 중복될 수 있지만, id는 한 페이지에서 딱 한번만 쓰이게 된다.
+              따라서 class는 광범위한 효과를 주고, id는 예외적으로 디자인을 바꿀 수 있어 class 위에 id를 얹어서 사용한다.-->
+
+<!-- 선택자의 우선순위 : .와 # 모두 지정하지 않으면 태그 이름을 의미한다. -> span이라는 이름의 태그는 모두 바뀐다.-->
+
+<!-- id > class > 태그 순서로 우선순위를 가지게 된다. -->

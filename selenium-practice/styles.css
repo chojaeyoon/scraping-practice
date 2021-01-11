@@ -1,0 +1,26 @@
+#first-heading {
+  color :royalblue;
+  text-align : center;
+}
+
+h2 {
+color : royalblue; 
+text-align: center;
+}
+
+p {
+  color:white;
+  background-color:lightblue;
+}
+
+li {
+  color:gray;
+}
+
+.beginner {
+  color : orange;
+}
+
+[href = "https://www.codeit.kr"] {
+  color : green;
+}

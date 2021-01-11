@@ -1,0 +1,20 @@
+h2, p{
+  color: royalblue;
+  text-align : center;
+}
+
+b.codeit{
+  color: purple;
+}
+
+li i {
+  color : red;
+}
+
+li > i {
+  color : orange;
+}
+
+li > * {
+  color : orange;
+}
