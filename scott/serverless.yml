@@ -1,0 +1,67 @@
+service: scott7
+
+provider:
+  profile: storicity
+  name: aws
+  runtime: nodejs12.x
+  memorySize: 1600
+  timeout: 30
+
+  region: ap-northeast-2
+
+  iamRoleStatements:
+    - Effect: Allow
+      Action:
+        - "lambda:InvokeFunction"
+      Resource: "*"
+
+  stage: prod
+
+package:
+  exclude:
+    - node_modules/puppeteer/.local-chromium/**
+
+functions:
+  getInfo:
+    handler: src/index.getInfo
+
+    events:
+      - http:
+          method: get
+          path: getInfo
+          request:
+            parameters:
+              querystrings:
+                inputUrl: true
+          cors:
+            origin: "*"
+            headers:
+              - Content-Type
+              - X-Amz-Date
+              - Authorization
+              - X-Api-Key
+              - X-Amz-Security-Token
+              - X-Amz-User-Agent
+            allowCredentials: false
+
+  getInfo2:
+    handler: src/index.getInfo
+
+    events:
+      - http:
+          method: get
+          path: getInfo2
+          request:
+            parameters:
+              querystrings:
+                inputUrl: true
+          cors:
+            origin: "*"
+            headers:
+              - Content-Type
+              - X-Amz-Date
+              - Authorization
+              - X-Api-Key
+              - X-Amz-Security-Token
+              - X-Amz-User-Agent
+            allowCredentials: false
