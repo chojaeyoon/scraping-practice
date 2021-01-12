@@ -112,7 +112,6 @@ module.exports.qsParams = {
       qs:
         "#mArticle > div.cont_essential > div.details_placeinfo > div.placeinfo_default.placeinfo_contact > div > div > span > span.txt_contact",
     },
-
     facilities: {
       qs:
         "#mArticle > div.cont_essential > div.details_placeinfo > div.placeinfo_default.placeinfo_facility > ul > li > span.color_g",
@@ -156,6 +155,54 @@ module.exports.qsParams = {
         "#mArticle > div.cont_essential > div.details_placeinfo > span > span.date_revise",
     },
   },
+
+  mangoplate: {
+    title: {
+      qs: "h1.restaurant_name",
+    },
+    rating: {
+      qs: ".rate-point",
+    },
+    addr: {
+      qs: ".only-desktop > td", 
+    },
+    addr2: {
+      qs: ".Restaurant__InfoAddress--Text",
+    },
+    ratingCount: {
+      qs: "body > main",
+      attrName : "data-review_count"
+    },
+    priceRange: {
+      qs: ".info > tbody > tr:nth-child(4) > td",
+    },
+    category: {
+      qs: "section.restaurant-detail > table > tbody > tr:nth-child(3) > td > span",
+    },
+    website: {
+      qs: "section.restaurant-detail > table > tbody > tr:nth-child(7) > td > a",
+      attrName: "href"
+    },
+    telephone: {
+      qs: "section.restaurant-detail > table > tbody > tr:nth-child(2) > td",
+    },
+    images: {
+      qs: "div:nth-child(1) > figure > figure > img",
+      attrName: "src"
+    },
+    openHours: {
+      qs: "section.restaurant-detail > table > tbody > tr:nth-child(6) > td", 
+    },
+    facilities: {
+      qs: "section.restaurant-detail > table > tbody > tr:nth-child(5) > td", 
+    },
+    updateDate: {
+      qs: "p.update_date",
+      rep : [/주소,/, ""],  
+    },    
+
+  },
+
 
   // TODO: WIP
   naver: {
@@ -207,7 +254,6 @@ module.exports.qsParams = {
       qs:
         "#mArticle > div.cont_essential > div.details_placeinfo > div.placeinfo_default.placeinfo_contact > div > div > span > span.txt_contact",
     },
-
     facilities: {
       qs:
         "#mArticle > div.cont_essential > div.details_placeinfo > div.placeinfo_default.placeinfo_facility > ul > li > span.color_g",

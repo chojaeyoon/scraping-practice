@@ -94,6 +94,10 @@ function getPlatform(url) {
     platform = "google";
   } else if (url.includes("kakao.com")) {
     platform = "kakao";
+  } else if (url.includes("mangoplate.com")) {
+    platform = "mangoplate";
+  } else if (url.includes("naver.com")) {
+    platform = "naver";
   }
   return platform;
 }
