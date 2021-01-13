@@ -208,12 +208,12 @@ module.exports.qsParams = {
   naver: {
     titleSelector: "h1.section-hero-header-title-title",
     title: {
-      qs: "#_title > span:nth-child(1)",
+      qs: "#_title > span:nth-child(1)", //ok
       // qs: '.inner_place > h2'
     },
     rating: {
-      qs:
-        "#mArticle > div.cont_essential > div:nth-child(1) > div.place_details > div > div > a:nth-child(3) > span.color_b",
+      qs: "span._9bFMx > em"
+      //"#mArticle > div.cont_essential > div:nth-child(1) > div.place_details > div > div > a:nth-child(3) > span.color_b",
       // qs: 'a.link_evaluation[data-target="comment"] > span.color_b',
       rep: ["점", ""],
     },
